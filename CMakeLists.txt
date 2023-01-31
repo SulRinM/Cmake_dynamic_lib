@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.20.0)
 project(Cmake_dynamic_lib)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_library(Leaver SHARED Leaver.cpp Leaver.h)
 add_executable(Cmake_dynamic_libExe Dinamic_lib_prj.cpp)
 target_link_libraries(Cmake_dynamic_libExe Leaver)
